@@ -31,9 +31,9 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     	
         
-        String readTwitterFeed = readInfo();
+        String readInfo = readInfo();
         try {
-			JSONArray jsonArray = new JSONArray(readTwitterFeed);
+			JSONArray jsonArray = new JSONArray(readInfo);
 			Log.i(MainActivity.class.getName(),
 					"Numero de entradas " + jsonArray.length());
 			
