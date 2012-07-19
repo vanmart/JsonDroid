@@ -31,7 +31,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
     	
         
-        String readTwitterFeed = readTwitterFeed();
+        String readTwitterFeed = readInfo();
         try {
 			JSONArray jsonArray = new JSONArray(readTwitterFeed);
 			Log.i(MainActivity.class.getName(),
@@ -52,7 +52,7 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    public String readTwitterFeed() {
+    public String readInfo() {
    	
         StringBuilder builder = new StringBuilder();
 		HttpClient client = new DefaultHttpClient();
